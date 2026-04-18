@@ -763,7 +763,7 @@ em { font-style: italic; }
 /* ============================================================
    CONTACT
    ============================================================ */
-.section-contact { padding-top: clamp(8rem, 14vw, 12rem); padding-bottom: clamp(5rem, 10vw, 8rem); }
+.section-contact { padding-top: clamp(4rem, 10vw, 12rem); padding-bottom: clamp(3rem, 8vw, 8rem); }
 .contact-inner { display: flex; flex-direction: column; gap: 4rem; }
 .contact-inner .chapter-label { color: var(--accent); }
 
@@ -959,10 +959,15 @@ a.cm-value:hover { color: var(--accent); }
 }
 
 @media (max-width: 720px) {
-  :root { --nav-h: 64px; }
+  :root {
+    --nav-h: 64px;
+    --sec-py: clamp(3rem, 8vw, 5rem);  /* tighter sections on mobile */
+  }
   .nav-links { display: none; }
   .nav-toggle { display: flex; }
 
+  /* Hero: single column, art as faint backdrop */
+  /* NOTE: no overflow:hidden on .hero or .hero-sticky — breaks position:sticky */
   .hero-slide {
     grid-template-columns: 1fr;
     padding: calc(var(--nav-h) + 1rem) var(--pad-x) 6rem;
@@ -973,12 +978,13 @@ a.cm-value:hover { color: var(--accent); }
   .hero-art {
     position: absolute;
     inset: 0;
-    opacity: 0.22;
+    opacity: 0.06;  /* very faint — prevents art labels bleeding into content */
     padding: 0;
     z-index: 0;
+    overflow: hidden;
   }
   .hero-content { position: relative; z-index: 1; }
-  .art-frame { max-width: 100%; aspect-ratio: auto; height: 100%; }
+  .art-frame { max-width: 100%; aspect-ratio: auto; height: 100%; overflow: hidden; }
 
   .hero-headline { font-size: clamp(2.8rem, 13vw, 4.6rem); }
 

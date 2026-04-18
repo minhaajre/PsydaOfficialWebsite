@@ -2,6 +2,9 @@
    PSYDA — main.js  (editorial redesign)
    ============================================================ */
 
+// Prevent browser from restoring mid-page scroll position on reload
+if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+
 // ── Scroll progress ────────────────────────────────────────
 const progressBar = document.getElementById('scrollProgress');
 function updateProgress() {
