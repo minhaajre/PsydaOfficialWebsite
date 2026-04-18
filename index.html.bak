@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Psyda — Bringing Analytics to Life</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=Inter:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════════ -->
+  <nav id="nav">
+    <a href="#home" class="nav-logo">
+      <img src="images/logo.jpg" alt="Psyda" class="nav-logo-img" />
+      <span class="nav-logo-text">Psyda</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#analytics">Analytics</a></li>
+      <li><a href="#media">Media</a></li>
+      <li><a href="#philanthropy">Philanthropy</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <a href="#home">Home</a>
+    <a href="#analytics">Analytics</a>
+    <a href="#media">Media</a>
+    <a href="#philanthropy">Philanthropy</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       HERO — full-width image + dark overlay
+  ══════════════════════════════════════════ -->
+  <section id="home" class="hero">
+    <!-- Slide 1 (main) -->
+    <div class="hero-slide active" style="background-image: url('images/analytics.jpg');">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow">Data · Insights · Impact</p>
+        <h1 class="hero-headline">Bringing Analytics<br /><em>to Life</em></h1>
+        <p class="hero-sub">We harness the power of data for NGOs, Governments,<br class="br-lg" />Think-Tanks, Industry Consortiums, Academia &amp; Individuals.</p>
+        <a href="https://www.linkedin.com/company/psyda" target="_blank" rel="noopener" class="btn-hero">
+          Our LinkedIn Page →
+        </a>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="hero-slide" style="background-image: url('images/bulb.jpg');">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow">Research · Discovery · Insight</p>
+        <h1 class="hero-headline">Research<br /><em>Institute</em></h1>
+        <p class="hero-sub">Our home-brewed research institute houses experts<br class="br-lg" />from various industries keeping us ahead of the game.</p>
+        <a href="#analytics" class="btn-hero">Explore Services →</a>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="hero-slide" style="background-image: url('images/media.jpg');">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow">Visual · Digital · Interactive</p>
+        <h1 class="hero-headline">Tell Your Story<br /><em>With a Bang</em></h1>
+        <p class="hero-sub">Bring your data to life with colors, podcasts,<br class="br-lg" />infographics, and interactive applications.</p>
+        <a href="#media" class="btn-hero">See Media Work →</a>
+      </div>
+    </div>
+
+    <!-- Slider Controls -->
+    <button class="slider-prev" aria-label="Previous slide">&#8592;</button>
+    <button class="slider-next" aria-label="Next slide">&#8594;</button>
+    <div class="slider-dots">
+      <button class="dot active" data-index="0" aria-label="Slide 1"></button>
+      <button class="dot" data-index="1" aria-label="Slide 2"></button>
+      <button class="dot" data-index="2" aria-label="Slide 3"></button>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       ANALYTICS — image left, text right
+  ══════════════════════════════════════════ -->
+  <section id="analytics" class="section section-light">
+    <div class="split-row">
+      <!-- Image -->
+      <div class="split-image fade-up">
+        <img src="images/analytics.jpg" alt="Analytics" />
+      </div>
+      <!-- Content -->
+      <div class="split-content fade-up">
+        <span class="section-tag">01 — Analytics</span>
+        <h2 class="split-title">Harnessing the<br /><em>Power of Data</em></h2>
+        <ul class="feature-list">
+          <li>
+            <span class="feature-dot"></span>
+            <div>
+              <strong>Data Preparation</strong>
+              <p>Clean your data from NaNs, Outliers, Skewness and Collinearity.</p>
+            </div>
+          </li>
+          <li>
+            <span class="feature-dot"></span>
+            <div>
+              <strong>Human Insights</strong>
+              <p>Generate human insights with in-house Machine Learning Algorithms using NLP on Documents and Text Corpus.</p>
+            </div>
+          </li>
+          <li>
+            <span class="feature-dot"></span>
+            <div>
+              <strong>Neural Classification</strong>
+              <p>Let our Neural Networks classify your Big Data — logs, text, video, audio or tabular data.</p>
+            </div>
+          </li>
+          <li>
+            <span class="feature-dot"></span>
+            <div>
+              <strong>Behavioral Research</strong>
+              <p>Establish and test social and behavioral theories using Structural Equation Modelling.</p>
+            </div>
+          </li>
+          <li>
+            <span class="feature-dot"></span>
+            <div>
+              <strong>Psychometric Models</strong>
+              <p>Spot trends and opportunities, make the right decisions using cohort analysis and psychometric classification.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       RESEARCH INSTITUTE — text left, image right
+  ══════════════════════════════════════════ -->
+  <section id="philanthropy" class="section section-alt">
+    <div class="split-row split-row-reverse">
+      <!-- Content -->
+      <div class="split-content fade-up">
+        <span class="section-tag">02 — Research Institute</span>
+        <h2 class="split-title">Experts Across<br /><em>Every Industry</em></h2>
+        <p class="split-intro">Our home-brewed research institute houses experts from various industries keeping us ahead of the game.</p>
+        <ul class="feature-list">
+          <li>
+            <span class="feature-dot"></span>
+            <div>
+              <strong>Data Mining &amp; EDA</strong>
+              <p>Get to the crux of your topic with data mining and exploratory data analysis solutions.</p>
+            </div>
+          </li>
+          <li>
+            <span class="feature-dot"></span>
+            <div>
+              <strong>Data Collection</strong>
+              <p>Collect data with Web scrapers, Qualtrics, SurveyMonkey and large databases like UNESCO, WHO, WorldBank.</p>
+            </div>
+          </li>
+          <li>
+            <span class="feature-dot"></span>
+            <div>
+              <strong>Qualitative Analysis</strong>
+              <p>Using best-in-class software like NVivo and MAXQDA we offer in-depth qualitative data analysis services.</p>
+            </div>
+          </li>
+          <li>
+            <span class="feature-dot"></span>
+            <div>
+              <strong>Publishing &amp; Pitching</strong>
+              <p>Publish findings in academic journals and jazz up startup pitches with predictive analysis and market trends.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- Image -->
+      <div class="split-image fade-up">
+        <img src="images/bulb.jpg" alt="Research Institute" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       MEDIA — centered headline + image + grid
+  ══════════════════════════════════════════ -->
+  <section id="media" class="section section-light">
+    <div class="container">
+      <div class="media-header fade-up">
+        <span class="section-tag">03 — Media</span>
+        <h2 class="media-headline">Tell Your Story<br /><em>With a Bang</em></h2>
+      </div>
+
+      <div class="media-body">
+        <div class="media-image fade-up">
+          <img src="images/media.jpg" alt="Media & Storytelling" />
+        </div>
+        <div class="media-services fade-up">
+          <div class="media-service-item">
+            <span class="service-number">01</span>
+            <div>
+              <strong>Visual Identity</strong>
+              <p>Bring your data to life with colors and compelling Visual Collateral.</p>
+            </div>
+          </div>
+          <div class="media-service-item">
+            <span class="service-number">02</span>
+            <div>
+              <strong>Podcasts &amp; Content</strong>
+              <p>Create Podcasts and rich media content that communicates your findings.</p>
+            </div>
+          </div>
+          <div class="media-service-item">
+            <span class="service-number">03</span>
+            <div>
+              <strong>Digital Platforms</strong>
+              <p>Retina-Ready websites and dynamic mobile apps that interact with your clients.</p>
+            </div>
+          </div>
+          <div class="media-service-item">
+            <span class="service-number">04</span>
+            <div>
+              <strong>Infographics</strong>
+              <p>Summarize complex reports with appealing infographics at a glance.</p>
+            </div>
+          </div>
+          <div class="media-service-item">
+            <span class="service-number">05</span>
+            <div>
+              <strong>Interactive Apps</strong>
+              <p>Let readers interact with your work in real-time via Flask and Django apps.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       CONTACT
+  ══════════════════════════════════════════ -->
+  <section id="contact" class="section section-contact">
+    <div class="container">
+      <div class="contact-header fade-up">
+        <span class="section-tag section-tag-light">Get in touch</span>
+        <h2 class="contact-headline">Let's Work<br /><em>Together</em></h2>
+      </div>
+
+      <div class="contact-body fade-up">
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-label">Email</span>
+            <a href="mailto:contact@psyda.org" class="contact-value">contact@psyda.org</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Phone</span>
+            <a href="tel:+12098806192" class="contact-value">+1 (209) 880-6192</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Location</span>
+            <span class="contact-value">Kigali, Rwanda</span>
+          </div>
+        </div>
+
+        <div class="contact-social">
+          <span class="contact-label">Connect Socially</span>
+          <div class="social-row">
+            <a href="#" class="social-btn">Facebook</a>
+            <a href="https://www.linkedin.com/company/psyda" target="_blank" rel="noopener" class="social-btn">LinkedIn</a>
+            <a href="#" class="social-btn">Instagram</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="footer-logo">
+        <img src="images/logo.jpg" alt="Psyda" />
+        <span>Psyda</span>
+      </a>
+      <p class="footer-copy">©2026 All Rights Reserved Psyda.org</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
